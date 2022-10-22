@@ -53,7 +53,7 @@ app
       }
     });
   })
-  .put((req, res) => {
+  .delete((req, res) => {
     Article.deleteMany({}, (err) => {
       if (!err) {
         res.send("deleted all data");
